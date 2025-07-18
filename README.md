@@ -73,6 +73,3 @@ Response:
 
 Visiting the root URL (`/`) in a browser will show a health check message. To use the API, send a POST request to `/identify` with a JSON body as shown above.
 
-## Deployment
-
-You can deploy this app to any Node.js hosting platform. For a live demo, use services like Render.com, Railway, or Vercel. 
