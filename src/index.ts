@@ -6,6 +6,10 @@ const prisma = new PrismaClient();
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Bitespeed Identity Reconciliation API is running. Use POST /identify.');
+});
+
 app.post('/identify', async (req: Request, res: Response) => {
   const { email, phoneNumber } = req.body;
   if (!email && !phoneNumber) {
